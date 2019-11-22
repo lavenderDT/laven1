@@ -21,6 +21,8 @@ namespace треня
     {
         static void Main(string[] args)
         {
+            
+
             //Продемонстрировать упаковку и распаковку любого типа
             int a = 8767;
             Object obj = a;
@@ -30,11 +32,10 @@ namespace треня
             //Пользователь вводит строку. Разбить строку на две подстроки равной длины.
             Console.WriteLine("Введите строку: ");
             string str = Console.ReadLine();
-            int l = (str.Length) / 2;
-            for (int i=0; i<l; i++)
-            {
-
-            }
+            string str1 = str.Substring((str.Length) / 2);
+            string str2 = str.Substring(0, (str.Length) / 2);
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
 
             //Задан двумерный массив int. Посчитайте в массиве количество нулевых элементов
             int[,] array = new int[3, 3] { { 1, 2, 3 }, { 0, 0, 4 }, { 5, 6, 0 } };
